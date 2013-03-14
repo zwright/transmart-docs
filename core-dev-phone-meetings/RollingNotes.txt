@@ -1,0 +1,53 @@
+Combined agenda and notes; core developers phone call
+Noon (16:00 GMT), March 12, 2013
+
+A review of the current efforts
+ - expanding unit tests and integration tests (UMich)
+ - establishing a test database (ICL)
+ 	Oracle DB to ProcesSQL (copying tables and data)
+ 	Problems with user name/configuration tables
+* 	TheHyve and ICL will work on this 
+ - investigating status of PostgreSQL ETL (ICL)
+* 	Recombinant to work with ICL to "get the right schema"
+* 		and dump table/db schema to github (postgreSQL version)
+ 		ETL scripts as well (which are in github?)
+ 	Seems to be a difference between the schema that the pipe line uses and the DB
+ 	may work better on the new test data (e.g. copy of Oracle DB)
+ 	using the postgres branch of ETL github archive
+ 	get a reference copy of the data base on a shared server (!)
+ 	version of the database? for dependency matching
+ 	migration scripts contain schema
+ 	need to move in the direction of Grails Domain objects (?)
+ 	some legacy code (pivot.jar, included)  
+ - starting work on Core API (theHyve, ICL)
+ - others
+Discussion of the work on the Core API
+ - review of design and early code
+ 	GitHub: transmart-core-api, transmart-core-db
+ 	should the APi's be moved to a service level (for example)
+ 	currently the API is implemented as Java
+ 		(thus could be mapped to, a service layer, and others)
+ - issues arising (e-mail from Kees)
+ - identification of tasks for scrum
+ 	basic functionality: ontology, clinical data, high dimensional data
+* 	Ontology data API, being working on by theHyve
+* 	CRC data (based on new data) API - ICL
+Update/add goals and Identify early milestones
+Expand/Create tasks list
+Identify and assign (volunteer for!) tasks for current week's scrum push
+Review technology stack and make decisions on what to use
+ - git hub is wonderful (Yes?)
+ - CI site(s)
+ 	https://ci.ctmmtrait.nl/browse/TM
+ - JIRA is ok?
+ - Collaboration tools abound
+ 	JIRA/GreenHopper/Bamboo ... (others?)
+ 	Skype? Google+ Hangouts?
+ 	others
+Process (phone call, communications, coordination)
+ What's working?
+ Where are there problems?
+ What fixes?
+
+Unit test; Umich
+Jira items; Umich
