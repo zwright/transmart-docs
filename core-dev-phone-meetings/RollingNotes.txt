@@ -2,22 +2,28 @@ Rolling version of combined agenda and notes; core developers phone calls
 Latest update: Noon (16:00 GMT), March 18, 2013
 
 A review of the current efforts
- - expanding unit tests and integration tests (UMich)
- - creating a three-tier architecture demo, based on core-api (UMich)
- - establishing a test database (ICL)
- 	Oracle DB to ProcesSQL (copying tables and data)
+   UMich
+*     domain object review (coverage); and unit test; API demo 
+*     still working on Jira 
+   Imperial 
+      ETL resolved; "everything working"; status needed
+        focus on clinical data
+*       This is priority!
+      Test data: Oracle DB to ProcesSQL (copying tables and data)
  	Problems with user name/configuration tables
- - investigating status of PostgreSQL ETL (ICL)
-	is this clinical data and/or micro-array data
-* 	TheHyve and ICL will work on this together
-	ETL Clinical data scripts compile and run to completion
-		tables in database appear to be correct
-		using the postgres branch of ETL github archive
- 	do we need to set up reference copy of the data base 
-		on a shared server (!)
- 	which version of the database? for dependency matching
- 	note: migration scripts contain current 1.0 schema
- 	also, don't forget some legacy code (pivot.jar, included)  
+*       Ontologies not working on interface
+      Work with theHyve on core after Easter
+   theHyve
+      ontology API completed
+      coreIntegration branch (working on CRC API)
+        most of the JS calls are unreachabe!
+*       implementation of CRC-from-i2b2 invloves learning meaning of tables
+      ETL: updating demo; missing some tables
+      looking at the "job execution" part of Transmart; Galexy as a candidate
+ETL problems
+*  missing tables in the postgreSQL versions: Recombinate to follow up
+        
+      
 Major push: the Core API
  - review of design and early code
  	GitHub: transmart-core-api, transmart-core-db
