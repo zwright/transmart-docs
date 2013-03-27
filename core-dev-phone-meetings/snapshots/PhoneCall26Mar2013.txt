@@ -1,5 +1,18 @@
-Rolling version of combined agenda and notes; core developers phone calls
-Latest update: Noon (16:00 GMT), March 27, 2013
+From phone call 26March2013
+In attendance:
+  weymouth@umich.edu (Terry Weymouth)
+  safet2012f2f+meeting1@gmail.com (Hannes Planatscher)
+  p.rice@imperial.ac.uk (Peter Rice)
+  aman.patel@stjude.org (Aman Patel)
+  f.guitton@imperial.ac.uk (Florian Guitton)
+  kees@thehyve.nl (Kees van Bochove)
+  mankapoor@deloitte.com (Manish Kapoor )
+  vmahavis@gmail.com (Vasu Mahavishnu)
+  mconser1@its.jnj.com (Mark Conser)
+  wim.van.der.linden@phiips.com (Wim van der Linden)
+  andrew.wellman@stjude.org (Andrew Wellman)
+  sw1111@doc.ic.ac.uk (Evan [Shicai], Imperial College London)
+  ami.khandeshi@pfizer.com (Ami Khandeshi)
 
 A review of the current efforts
    UMich
