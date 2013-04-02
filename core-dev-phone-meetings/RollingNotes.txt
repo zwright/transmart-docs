@@ -3,7 +3,7 @@ Latest update: Noon (16:00 GMT), March 27, 2013
 
 A review of the current efforts
    UMich
-*     domain object review (coverage); and unit test; API demo 
+*     domain object review (coverage); and unit test; API demo
 *     still working on Jira 
    Imperial 
       ETL resolved; "everything working"; status needed
@@ -14,12 +14,40 @@ A review of the current efforts
 *       Ontologies not working on interface
       Work with theHyve on core after Easter
    theHyve
-      ontology API completed
+      made pull request to archive on ETL; "mostly done"; who is to merge?
       coreIntegration branch (working on CRC API)
-        most of the JS calls are unreachabe!
+        i2b2 factored out! (that is "hidden behind the API")
 *       implementation of CRC-from-i2b2 invloves learning meaning of tables
-      ETL: updating demo; missing some tables
-      looking at the "job execution" part of Transmart; Galexy as a candidate
+	some issues surrounding security (needs review!)
+          bug exists that hides ontology tree if not admin??
+          non-admin users "should" see ontolovy tree grayed out
+	  (in review by Manish; et al)
+        Notes on API (CRC):
+	  notes can be attached "anywhere"; not used much in current GUI
+      problems with postgreSQL with respect to
+        images
+	see PULL REQUST at transmartApp
+      looking at the "job execution" part of Transmart; Galexy/Chipster as a candidate
+
+Meeting at 16:00-17:00 British Time on Wednesday: deatils of API.
+
+Next tasks (future directions)
+  API for analysis part of dataset explore (including job execution)
+    who are the users? workflow? stories? roles?
+    plugin framework?
+  API high demensional data
+  
+  GUI improvments
+    examination of XJS?
+    identify API?
+    who are the users? workflow? stories? roles?
+      some work on this at BioIT World
+    what role SPOTFIRE?
+    
+  J&J "factered search" integraiton into TrasnmartApp (more information post BioIT World)
+  API for search (depends on the update of the search page; and inclusion of the new search)
+  
+
 ETL problems
 *  missing tables in the postgreSQL versions: Recombinate to follow up
         
