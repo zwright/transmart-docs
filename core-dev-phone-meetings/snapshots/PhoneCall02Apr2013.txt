@@ -1,6 +1,18 @@
-Rolling version of combined agenda and notes; core developers phone calls
-Latest update: 11:00EST (16:00 BST), April 2, 2013
+Core Developers Meeting – 2013 April 2
 
+Fabien Richard, fabien.richard@merckgroup.com
+Terry Weymouth, weymouth@umich.edu
+Venkata Satagopam, satagopa@embl.de
+Michael Tommie McDuffie, mmcduffie@deloitte.com
+Kees van Bochove, kees@thehyve.nl
+Shicai Wang, s.wang11@imperial.ac.uk
+Ibrahim, i.emam@imperial.ac.uk
+Vasu Mahavishnu, vmahavis@gmail.com
+Mark Conser, mconser1@its.jnj.com
+Anthony Rowe, arowe4@its.jnj.com
+Manish Kapoor, mankapoor@deloitte.com
+
+From the notes...
 A review of the current efforts
    UMich
 *     domain object review (coverage); and unit test; API demo
