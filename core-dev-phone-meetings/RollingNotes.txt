@@ -5,7 +5,7 @@ A review of the current efforts
    UMich
 *     domain object review (coverage); and unit test; API demo
 *     still working on Jira 
-   Imperial 
+   Imperial (and University of Luxembourg on ETL)
       ETL resolved; "everything working"; status needed
         focus on clinical data
 *       This is priority!
@@ -32,6 +32,7 @@ A review of the current efforts
 Meeting at 16:00-17:00 British Time on Wednesday: deatils of API.
 
 Next tasks (future directions)
+  REMINDER: unit tests!
   API for analysis part of dataset explore (including job execution)
     who are the users? workflow? stories? roles?
     plugin framework?
