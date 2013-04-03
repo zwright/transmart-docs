@@ -29,4 +29,11 @@ Links:
     https://github.com/transmart/transmartApp
     
   the blog describing the project
+    http://thehyve.nl/inital-work-on-transmarts-core
     
+Notes:
+  Review of Ontology and CRC related API's
+  Discussion of API role on implementation
+  Discussion of the appropriate license for the API (!)
+  	Should this be licensed under "looser" terms?
+  	
