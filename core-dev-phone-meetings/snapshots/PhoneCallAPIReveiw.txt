@@ -1,0 +1,32 @@
+Review of core API
+
+Attendees
+ Kevin Smith <kasmith@transmartfoundation.org>
+ Weu Gu <wei.gu@uks.eu>
+ Andrew Wellman <andrew.wellman@stjude.org>
+ Manish Kapoor <mankapoor@deloitte.com>
+ Kees van Mochove <kees@thehyve.nl>
+ Peter Rice <p.rice@imperial.ac.uk>
+ Aman Patel <aman.patel@stjude.org>
+ Michael McDuffie <mmcduffie@deloitte.com>
+ Vasu Mahavisno <vmahavis@umich.edu>
+ Ibrahim Emam <i.emam@imperial.ac.uk>
+ Yuri Quintana <yuri.quintana@stjude.org>
+ Evan Shicai <sw1111@doc.ic.ac.uk>
+ Jay Knight <jay.knight@stjude.org>
+ Hannes Planatscher <safet2012f2f+meeting1@gmail.com>
+
+Kees and Gustavo presented the core API and implementation
+
+Links:
+  transmart-core-api (the API)
+    https://github.com/transmart/transmart-core-api which forks
+    https://github.com/thehyve/transmart-core-api
+  transmart-core-db (the implementation of the API)
+    https://github.com/transmart/transmart-core-db which forks
+    https://github.com/thehyve/transmart-core-db
+  in transmartApp (on branch core-integration)
+    https://github.com/transmart/transmartApp
+    
+  the blog describing the project
+    
