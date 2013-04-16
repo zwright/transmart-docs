@@ -1,3 +1,8 @@
+Agenda for April 16, 2013
+	- review of current efforts
+	- tools inventory (and setting up tranSMART Foundation server)
+	- report on BioIT World	
+
 Rolling version of combined agenda and notes; core developers phone calls
 Latest update: 11:00EST (16:00 BST), April 2, 2013
 
@@ -6,15 +11,19 @@ A review of the current efforts
 *     domain object review (coverage); and unit test; API demo
 *     still working on Jira 
    Imperial (and University of Luxembourg on ETL)
-      ETL resolved; "everything working"; status needed
+	  loading data for search app; may be missing tables!!
+		Where does compound and pathway data go (in the database)?
+      ETL loading
         focus on clinical data
+		currently loading Genomics data
 *       This is priority!
-      Test data: Oracle DB to ProcesSQL (copying tables and data)
+		Getting help and data dump from Recombinant (Manish)
  	Problems with user name/configuration tables
 *       Ontologies not working on interface
       Work with theHyve on core after Easter
    theHyve
-      made pull request to archive on ETL; "mostly done"; who is to merge?
+	  ETL - made several corrections to the tables (in PostgreSQL) to support the ETL process
+	  Problems with Clinical Data
       coreIntegration branch (working on CRC API)
         i2b2 factored out! (that is "hidden behind the API")
 *       implementation of CRC-from-i2b2 invloves learning meaning of tables
@@ -26,8 +35,12 @@ A review of the current efforts
 	  notes can be attached "anywhere"; not used much in current GUI
       problems with postgreSQL with respect to
         images
+    RModules addition
+	  analysis R routines in theHyve github
 	see PULL REQUST at transmartApp
       looking at the "job execution" part of Transmart; Galexy/Chipster as a candidate
+	  Grid scheduling 
+	  Working with high-performance center at Amsterdam
 
 Meeting at 16:00-17:00 British Time on Wednesday: deatils of API.
 
