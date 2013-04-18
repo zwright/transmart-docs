@@ -1,5 +1,25 @@
-Rolling version of combined agenda and notes; core developers phone calls
-Latest update: 16:00 EDT (21:00 BST), April 18, 2013
+Core Developers Meeting – 2013 April 16
+
+Andrew Wellman <andrew.wellman@stjude.org>
+Shicai Wang <s.wang11@imperial.ac.uk>
+Peter Rice <p.rice@imperial.ac.uk>
+Michael Tommie McDuffie <mmcduffie@deloitte.com>
+David Johnson <djbytes@acm.org>
+Venkata Satagopam <venkata.satagopam@uni.lu>
+Vasu Mahavisno <vmahavis@umich.edu>
+Terry Weymouth <weymouth@umich.edu>
+Ioannis Pandis <i.pandis@imperial.ac.uk>
+Charlotte Raillere <Charlotte.Raillere@sanofi.com>
+Ibrahim Emam <i.emam@imperial.ac.uk>
+Yuri Quintana <yuri.quintana@stjude.org>
+Kees van Bochove <kees@thehyve.nl>
+Manish Kapoor <mankapoor@deloitte.com>
+Gustavo  dos Santos Lopes <gustavo@thehyve.nl>
+Florian Guitton <f.guitton@imperial.ac.uk>
+Anthony Rowe <arowe4@its.jnj.com>
+Jay Knight <jay.knight@stjude.org>
+
+
 
 A review of the current efforts
   UMich
