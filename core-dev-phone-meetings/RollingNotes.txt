@@ -1,10 +1,30 @@
-Agenda for April 16, 2013
+Agenda for April 23, 2013
+	- discussion of testing
+		review of https://ci.ctmmtrait.nl/browse/TM-TMF-22
+		types of tests: unit test, integration tests, web tests
+		integration testing requires:
+			a working public server 
+			working pubic test data (for example, the conversion of the GEO data from transmartApp 1.0)
+			GEO studies from 1.0 (get accession numbers?)
+			Stabilizing the database schema (as grails domain classes)
+			ETL for loading data (microarray and clinical working)
+			Missing SNP data (J&J working on this)
+	- opportunity for GUI testing
+		gui test scripts (paper version)
+		automation of these scripts (or scripts like them)
+		using Selenium: 
+		
+		
 	- review of current efforts
-	- tools inventory (and setting up tranSMART Foundation server)
-	- report on BioIT World	
+
+	Umich current unit test; as data is available the integrations test
+	Imperial, data loading; GUI interface into test
+	
+
+
 
 Rolling version of combined agenda and notes; core developers phone calls
-Latest update: 11:00EST (16:00 BST), April 2, 2013
+Latest update: 11:00EST (16:00 BST), April 23, 2013
 
 A review of the current efforts
    UMich
@@ -26,10 +46,10 @@ A review of the current efforts
 	  Problems with Clinical Data
       coreIntegration branch (working on CRC API)
         i2b2 factored out! (that is "hidden behind the API")
-*       implementation of CRC-from-i2b2 invloves learning meaning of tables
+*       implementation of CRC-from-i2b2 involves learning meaning of tables
 	some issues surrounding security (needs review!)
           bug exists that hides ontology tree if not admin??
-          non-admin users "should" see ontolovy tree grayed out
+          non-admin users "should" see ontology tree grayed out
 	  (in review by Manish; et al)
         Notes on API (CRC):
 	  notes can be attached "anywhere"; not used much in current GUI
@@ -42,28 +62,28 @@ A review of the current efforts
 	  Grid scheduling 
 	  Working with high-performance center at Amsterdam
 
-Meeting at 16:00-17:00 British Time on Wednesday: deatils of API.
+Meeting at 16:00-17:00 British Time on Wednesday: details of API.
 
 Next tasks (future directions)
   REMINDER: unit tests!
   API for analysis part of dataset explore (including job execution)
     who are the users? workflow? stories? roles?
     plugin framework?
-  API high demensional data
+  API high dimensional data
   
-  GUI improvments
+  GUI improvements
     examination of XJS?
     identify API?
     who are the users? workflow? stories? roles?
       some work on this at BioIT World
     what role SPOTFIRE?
     
-  J&J "factered search" integraiton into TrasnmartApp (more information post BioIT World)
+  J&J "facited search" integration into TrasnmartApp (more information post BioIT World)
   API for search (depends on the update of the search page; and inclusion of the new search)
   
 
 ETL problems
-*  missing tables in the postgreSQL versions: Recombinate to follow up
+*  missing tables in the postgreSQL versions: Recombinant to follow up
         
       
 Major push: the Core API
