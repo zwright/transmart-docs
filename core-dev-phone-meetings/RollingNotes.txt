@@ -1,39 +1,82 @@
 Rolling version of combined agenda and notes; core developers phone calls
-Latest update: 16:00 EDT (21:00 BST), April 18, 2013
+Latest update: 11:00EST (16:00 BST), April 23, 2013
+
+	- discussion of testing
+		review of https://ci.ctmmtrait.nl/browse/TM-TMF-22
+		types of tests: unit test, integration tests, web tests
+		integration testing requires:
+			a working public server 
+			working pubic test data (for example, the conversion of the GEO data from transmartApp 1.0)
+			GEO studies from 1.0 (get accession numbers?)
+			Stabilizing the database schema (as grails domain classes)
+			ETL for loading data (microarray and clinical working)
+			Missing SNP data (J&J working on this)
+	- opportunity for GUI testing
+		gui test scripts (paper version)
+		automation of these scripts (or scripts like them)
+		using Selenium: 
+		
+		
+	- review of current efforts
+
+	Umich current unit test; as data is available the integrations test
+	Imperial, data loading; GUI interface into test
+	
+
+-------------
+Previous Notes:
 
 A review of the current efforts
-  UMich
-*   API demo
-  Imperial (and University of Luxembourg on ETL)
-    ETL progress/process - this is a priority
-      focus on clinical data
-      missing some tables: work with Manish; getting tables into GitHub scripts
+   UMich
+*     domain object review (coverage); and unit test; API demo
+*     still working on Jira 
+   Imperial (and University of Luxembourg on ETL)
+	  loading data for search app; may be missing tables!!
+		Where does compound and pathway data go (in the database)?
+      ETL loading
+        focus on clinical data
+		currently loading Genomics data
+*       This is priority!
+		Getting help and data dump from Recombinant (Manish)
+ 	Problems with user name/configuration tables
+*       Ontologies not working on interface
+      Work with theHyve on core after Easter
    theHyve
-*     looking at the "job execution" part of Transmart; Galexy as a candidate
+	  ETL - made several corrections to the tables (in PostgreSQL) to support the ETL process
+	  Problems with Clinical Data
       coreIntegration branch (working on CRC API)
         i2b2 factored out! (that is "hidden behind the API")
-*       implementation of CRC-from-i2b2 invloves learning meaning of tables
-      some issues surrounding security (needs review!)
-        non-admin users "should" see ontolovy tree grayed out
-      API for CRC:
-        notes can be attached "anywhere"; not used much in current GUI
-        problems with postgreSQL with respect to images
+*       implementation of CRC-from-i2b2 involves learning meaning of tables
+	some issues surrounding security (needs review!)
+          bug exists that hides ontology tree if not admin??
+          non-admin users "should" see ontology tree grayed out
+	  (in review by Manish; et al)
+        Notes on API (CRC):
+	  notes can be attached "anywhere"; not used much in current GUI
+      problems with postgreSQL with respect to
+        images
+    RModules addition
+	  analysis R routines in theHyve github
+	see PULL REQUST at transmartApp
+      looking at the "job execution" part of Transmart; Galexy/Chipster as a candidate
+	  Grid scheduling 
+	  Working with high-performance center at Amsterdam
 
 Next tasks (future directions)
   REMINDER: unit tests!
   API for analysis part of dataset explore (including job execution)
     who are the users? workflow? stories? roles?
     plugin framework?
-  API high demensional data
+  API high dimensional data
   
-  GUI improvments
+  GUI improvements
     examination of XJS?
     identify API?
     who are the users? workflow? stories? roles?
       some work on this at BioIT World
     what role SPOTFIRE?
     
-  J&J "factered search" integraiton into TrasnmartApp (more information post BioIT World)
+  J&J "facited search" integration into TrasnmartApp (more information post BioIT World)
   API for search (depends on the update of the search page; and inclusion of the new search)
         
 Update/add goals and Identify early milestones
