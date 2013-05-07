@@ -1,5 +1,25 @@
 Rolling version of combined agenda and notes; core developers phone calls
-Latest update: 11:00EST (16:00 BST), April 23, 2013
+Latest update: 11:00EST (16:00 BST), April 30, 2013
+
+Workshop preparation status
+Current status on
+	getting standard DB for testing and demo
+		Manish working on dump; Public clinical data trails
+		See also (in github, transmartApp-DB, postgresMigrate branch):
+		https://github.com/transmart/transmartApp-DB/tree/postgresMigrate/postgresql_version
+	ETL/Data Loading
+		Clinical and Gene Expression data loaded (@ Imperial) with old scripts; updating
+	Core development
+		Documentation of API, looking for tools (minimal -> JavaDoc) Kees
+		Document data schema and ETL, and too gtihub Ami 
+	API work/status
+		Manish, Michael, mapping of I2B2 to API core-API (tests to be sent out)
+		API "sub committee"
+			working on new API for high dimensional data: 
+				Manish, Gustavo, Michael, and TBD from Imperial
+
+-------------
+Previous Notes:
 
 	- discussion of testing
 		review of https://ci.ctmmtrait.nl/browse/TM-TMF-22
@@ -22,9 +42,6 @@ Latest update: 11:00EST (16:00 BST), April 23, 2013
 	Umich current unit test; as data is available the integrations test
 	Imperial, data loading; GUI interface into test
 	
-
--------------
-Previous Notes:
 
 A review of the current efforts
    UMich
