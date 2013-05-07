@@ -1,23 +1,57 @@
 Rolling version of combined agenda and notes; core developers phone calls
-Latest update: 11:00EST (16:00 BST), April 30, 2013
-
 Workshop preparation status
+	
+Items for agenda
+	Items from phone call with tranSMART
+		release planning (deadlines: Alpha, May 15; Beta, June 15; Release, Sept 15)
+		testing and documentation (unit tests! integration tests!)
+	Branches on GitHub:transmartApp (below)
+	Current status (below)
+	
+Branches:
+master
+GWAS - dev branch; not yet for release
+	Client implementation (Recom); 
+	meta data for study (e.g. show definitions)
+	self upload of meta-data
+	(to be discussed at workshop; first steps get the code in github)
+ImperialBranch - core release
+	On going development at Imperial
+	some fixes needs
+JNJ_GPL1.0_HOTFIX_MERGE - hidden in core release for June
+	faceted search from Jenson
+	ETL - Scripts for new search table?
+	Merge will be a problem?
+	Postgres Migration does not currently support search!
+core-integration - core release
+	implementation of the transmart-core-api in the current transmartApp
+	ready for merging; waiting on other tester's (done at Imperial)
+dynamic_db_example - old code? (drop?)
+hotfix-GPL1.0_GA - drop branch tag?
+unit_test_fixes - drop
+workshop_test_fixes	- drop
+	
 Current status on
 	getting standard DB for testing and demo
-		Manish working on dump; Public clinical data trails
+		Manish working on dump; Public clinical data trails; still vetting 'releasability'
 		See also (in github, transmartApp-DB, postgresMigrate branch):
 		https://github.com/transmart/transmartApp-DB/tree/postgresMigrate/postgresql_version
 	ETL/Data Loading
 		Clinical and Gene Expression data loaded (@ Imperial) with old scripts; updating
 	Core development
 		Documentation of API, looking for tools (minimal -> JavaDoc) Kees
-		Document data schema and ETL, and too gtihub Ami 
+			- API's for HD data! (Looking for feed-back!)
+		Document data schema and ETL
 	API work/status
 		Manish, Michael, mapping of I2B2 to API core-API (tests to be sent out)
 		API "sub committee"
 			working on new API for high dimensional data: 
 				Manish, Gustavo, Michael, and TBD from Imperial
-
+	Test of GUI elements
+		(Automation: Selenium)
+		http://transmartproject.org/wiki/display/TSMTGPL/QA+Testing
+		
+	
 -------------
 Previous Notes:
 
