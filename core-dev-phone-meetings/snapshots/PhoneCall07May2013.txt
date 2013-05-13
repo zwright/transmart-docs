@@ -1,0 +1,156 @@
+Snapshot: 11:00EST (16:00 BST), May 7, 2013 (from phone meeting)(
+
+Attending: 
+Terry Weymouth	weymouth@umich.edu
+Jay Knight	jay.knight@stjude.org
+Shicai Wang	s.wang11@imperial.ac.uk
+Andrew Wellman	andrew.wellman@stjude.org
+Peter Rice	p.rice@imperial.ac.uk
+Florian Guitton	f.guitton@imperial.ac.uk
+Kees van Bochove	kees@thehyve.nl
+Jonathan Cornibe	jcornibe@its.jnj.com
+Venkata Satagopam	venkata.satagopam@uni.lu
+Michael Tommie McDuffie	mmcduffie@deloitte.com
+Wim van der linden	wim.van.der.linden@philips.com
+Manish	mankapoor@deloitte.com
+Vasu Mahavisno	vmahavis@umich.edu
+Ami Khandeshi	ami.khandeshi@pfizer.com
+Yuri Quintana	yuri.quintana@stjude.org
+	
+Items for agenda
+	Items from phone call with tranSMART
+		release planning (deadlines: Alpha, May 15; Beta, June 15; Release, Sept 15)
+		testing and documentation (unit tests! integration tests!)
+	Branches on GitHub:transmartApp (below)
+	Current status (below)
+	
+Branches:
+master
+GWAS - dev branch; not yet for release
+	Client implementation (Recom); 
+	meta data for study (e.g. show definitions)
+	self upload of meta-data
+	(to be discussed at workshop; first steps get the code in github)
+ImperialBranch - core release
+	On going development at Imperial
+	some fixes needs
+JNJ_GPL1.0_HOTFIX_MERGE - hidden in core release for June
+	faceted search from Jenson
+	ETL - Scripts for new search table?
+	Merge will be a problem?
+	Postgres Migration does not currently support search!
+core-integration - core release
+	implementation of the transmart-core-api in the current transmartApp
+	ready for merging; waiting on other tester's (done at Imperial)
+dynamic_db_example - old code? (drop?)
+hotfix-GPL1.0_GA - drop branch tag?
+unit_test_fixes - drop
+workshop_test_fixes	- drop
+	
+Current status on
+	getting standard DB for testing and demo
+		Manish working on dump; Public clinical data trails; still vetting 'releasability'
+		See also (in github, transmartApp-DB, postgresMigrate branch):
+		https://github.com/transmart/transmartApp-DB/tree/postgresMigrate/postgresql_version
+	ETL/Data Loading
+		Clinical and Gene Expression data loaded (@ Imperial) with old scripts; updating
+	Core development
+		Documentation of API, looking for tools (minimal -> JavaDoc) Kees
+			- API's for HD data! (Looking for feed-back!)
+		Document data schema and ETL
+	API work/status
+		Manish, Michael, mapping of I2B2 to API core-API (tests to be sent out)
+		API "sub committee"
+			working on new API for high dimensional data: 
+				Manish, Gustavo, Michael, and TBD from Imperial
+	Test of GUI elements
+		(Automation: Selenium)
+		http://transmartproject.org/wiki/display/TSMTGPL/QA+Testing
+		
+	
+-------------
+Previous Notes:
+
+	- discussion of testing
+		review of https://ci.ctmmtrait.nl/browse/TM-TMF-22
+		types of tests: unit test, integration tests, web tests
+		integration testing requires:
+			a working public server 
+			working pubic test data (for example, the conversion of the GEO data from transmartApp 1.0)
+			GEO studies from 1.0 (get accession numbers?)
+			Stabilizing the database schema (as grails domain classes)
+			ETL for loading data (microarray and clinical working)
+			Missing SNP data (J&J working on this)
+	- opportunity for GUI testing
+		gui test scripts (paper version)
+		automation of these scripts (or scripts like them)
+		using Selenium: 
+		
+		
+	- review of current efforts
+
+	Umich current unit test; as data is available the integrations test
+	Imperial, data loading; GUI interface into test
+	
+
+A review of the current efforts
+   UMich
+*     domain object review (coverage); and unit test; API demo
+*     still working on Jira 
+   Imperial (and University of Luxembourg on ETL)
+	  loading data for search app; may be missing tables!!
+		Where does compound and pathway data go (in the database)?
+      ETL loading
+        focus on clinical data
+		currently loading Genomics data
+*       This is priority!
+		Getting help and data dump from Recombinant (Manish)
+ 	Problems with user name/configuration tables
+*       Ontologies not working on interface
+      Work with theHyve on core after Easter
+   theHyve
+	  ETL - made several corrections to the tables (in PostgreSQL) to support the ETL process
+	  Problems with Clinical Data
+      coreIntegration branch (working on CRC API)
+        i2b2 factored out! (that is "hidden behind the API")
+*       implementation of CRC-from-i2b2 involves learning meaning of tables
+	some issues surrounding security (needs review!)
+          bug exists that hides ontology tree if not admin??
+          non-admin users "should" see ontology tree grayed out
+	  (in review by Manish; et al)
+        Notes on API (CRC):
+	  notes can be attached "anywhere"; not used much in current GUI
+      problems with postgreSQL with respect to
+        images
+    RModules addition
+	  analysis R routines in theHyve github
+	see PULL REQUST at transmartApp
+      looking at the "job execution" part of Transmart; Galexy/Chipster as a candidate
+	  Grid scheduling 
+	  Working with high-performance center at Amsterdam
+
+Next tasks (future directions)
+  REMINDER: unit tests!
+  API for analysis part of dataset explore (including job execution)
+    who are the users? workflow? stories? roles?
+    plugin framework?
+  API high dimensional data
+  
+  GUI improvements
+    examination of XJS?
+    identify API?
+    who are the users? workflow? stories? roles?
+      some work on this at BioIT World
+    what role SPOTFIRE?
+    
+  J&J "facited search" integration into TrasnmartApp (more information post BioIT World)
+  API for search (depends on the update of the search page; and inclusion of the new search)
+        
+Update/add goals and Identify early milestones
+Expand/Create tasks list
+
+Process (phone call, communications, coordination)
+ What's working?
+ Where are there problems?
+ What fixes?
+
