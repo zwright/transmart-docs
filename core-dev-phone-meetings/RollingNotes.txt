@@ -1,10 +1,22 @@
 Rolling version of combined agenda and notes; core developers phone calls
 Workshop preparation status
+
+Meeting agenda:
+	Introduction of new members.
+	Agenda for workshop.
+	Progress reports.
+	Other matters arising.
+
+Workshop - GoToMeeting, recording
+
+GUI - usability issues
+
+ETL - issues	
+	SNP data schemas and issues (anyone?)
+	Focus next weeks call on this topic.
+
+------ previous items --------
 	
-Items for agenda
-	Items from phone call with tranSMART
-		release planning (deadlines: Alpha, May 15; Beta, June 15; Release, Sept 15)
-		testing and documentation (unit tests! integration tests!)
 	Branches on GitHub:transmartApp (below)
 	Current status (below)
 	
