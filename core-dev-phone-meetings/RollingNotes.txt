@@ -17,6 +17,46 @@ ETL - issues
 
 ------ previous items --------
 	
+=======
+Agenda/Notes May 28, 2013
+Status reports...
+	
+Review branches (of transmartApp) for release
+  Imperial Branch
+  core-integration
+  JNJ_GPL1.0_HOTFIX_MERGE
+  GWAS (?)
+  faceted search (?)
+  
+Merge plan for "code freeze" ???
+  core-integration -> master 
+  + Imperial Branch -> master
+  + ?? (master -> GWAS) -> master
+  JNJ_GPL1.0_HOTFIX_MERGE - merge moving forward (not quite complete)
+  (CTMM-Trait activity?)
+
+Workshop status.
+  expect "community building"!
+  two "tracks": developers && users
+  Target: Roadmap Discussion - try to bring in all the development efforts
+  	Security is an issue that needs attention
+  	Update the the API "ecosystem"
+  	ETL process/effort - discussion of current process; sharing scripts/knowledge
+  	  what resources to introduce new people to ETL process
+  	  perhaps framed in terms of purpose/goals
+  	
+Other?
+  Kees: based on calls with others - updating API requirements;
+    see background notes: http://thehyve.github.io/transmart-core-api/
+  Terry, Yannis, Kees to put together an extended agenda for the workshop
+    and circulate it before next phone meeting for review/reaction.
+  		
+
+---- Prior to May 28, 2013 ---- 	
+Items for agenda
+	Items from phone call with tranSMART
+		release planning (deadlines: Alpha, May 15; Beta, June 15; Release, Sept 15)
+		testing and documentation (unit tests! integration tests!)
 	Branches on GitHub:transmartApp (below)
 	Current status (below)
 	
