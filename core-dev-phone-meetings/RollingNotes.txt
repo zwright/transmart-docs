@@ -19,7 +19,7 @@ Meeting agenda:
 		Peter - (+) admin pages
 		Jay B - UI (DatasetEx, Search, andvance workflow)
 		Tania - UI (DatasetEx, Search, andvance workflow), ETL
-		Vankara - ETL
+		Venkata - ETL testing
 	
 	
 ------ previous items -------- 25 June 2013
