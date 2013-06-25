@@ -1,5 +1,40 @@
 Rolling version of combined agenda and notes; core developers phone calls
-Workshop preparation status
+
+Meeting agenda:
+	Planning phone meetings. 
+		Proposal today and July 2 on v1.1 immediate release, 
+		And July 9, 17, 23 on v1.2: Roadmap, Timing topics: Api, User requirements, next features
+	Review Community Tools announcement
+		http://wiki.transmartfoundation.org/wiki/display/TSMTGPL/Community+tools
+		(some still under development)
+	Immediate plan
+		Release tag: GPL1.1_Beta_RC2
+		first: transmart/transmart-core-api, transmart/transmart-core-db, transmart/Rmodules
+		then: transmart/transmartApp-DB, transmart/transmart-ETL
+		then: transmart/TransmartAppInstaller (forked from theHyve, modified)
+		what branches, transmartApp: https://github.com/transmart/transmartApp/network
+	Who is testing? what?
+		https://wiki.transmartfoundation.org/display/TSMTGPL/Walk-through+GUI+Tests
+		Peter, Yannis - ETL testing
+		Peter - (+) admin pages
+		Jay B - UI (DatasetEx, Search, andvance workflow)
+		Tania - UI (DatasetEx, Search, andvance workflow), ETL
+		Vankara - ETL
+	
+	
+------ previous items -------- 25 June 2013
+
+Meeting agenda:
+	Announcements
+		workshop agenda sent out
+		theHyve setting up collaboration tools for transmart; announcement shortly
+	Notes on workshop
+		Release plan: http://transmartproject.org/wiki/display/TSMTGPL/Release+Plan+for+tranSMART+V+1.1
+	Leonid and Tania on ETL
+	ETL discussion
+	
+
+------ previous items --------
 
 Meeting agenda:
 	Introduction of new members.
@@ -14,8 +49,6 @@ GUI - usability issues
 ETL - issues	
 	SNP data schemas and issues (anyone?)
 	Focus next weeks call on this topic.
-
------- previous items --------
 	
 =======
 Agenda/Notes May 28, 2013
