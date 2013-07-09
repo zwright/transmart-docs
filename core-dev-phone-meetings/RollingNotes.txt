@@ -1,5 +1,45 @@
 Rolling version of combined agenda and notes; core developers phone calls
 
+
+Meeting agenda:
+	Current branches to integrate in 1.2:
+		- Main open source branch 'Postgres'
+		- Janssen HOTFIX - Faceted Search
+		- Sanofi RC1 - New Search page, modifications to Dataset Explorer
+		- Pfizer GWAS
+	Core API development
+		- General infrastructure
+		- Clinical Data API
+		- High Dimensional API
+		- Knowledge Management API
+		- Analysis API
+		
+	Todo items:
+		- Faceted Search integration taskforce: Jonathan, Kees, Florian, Ruslan
+			--> Ideally resulting in a db and a UI plugin
+		- Pfizer branch integration: extract GWAS functionality into a plugin: Ami
+			--> Completion planned sometimes in fall 2013
+			--> Components: GWAS data model, GWAS UI - extension of Faceted Search,
+			    separate tool: Manhattan Plot (GWAVA)
+			--> Have to investigate how much this deviates from J&J HOTFIX Faceted Search
+		- VCF importer - https://github.com/transmart/tranSMART-ETL/tree/master/src/com/recomdata/pipeline/vcf
+		- Sanofi search interface / program-management --> convert to plugin
+		- Sanofi changes to Dataset Explorer - seem limited
+		- UI overhaul - ExtJS newer versions impose GPLv3 constraints - move to jQuery UI
+			--> Faceted Search is using jQuery, also parts of Sanofi branch
+		- Oracle->Postgres support :: move towards definitions in Hibernate / Grails Domain Objects where possible,
+			and if database-specific optimizations are necessary, separate them in a (database-specific) plugin
+		- Continuous Integration environment taskforce: Terry, (Kees)... --> 1 Oracle and 1 Postgres tranSMART instance
+			on https://ci.transmartfoundation.org
+		- Developer infrastructure: Nexus (https://repo.transmartfoundation.org), Bamboo (https://ci.transmartfoundation.org),
+			Stash (https://code.transmartfoundation.org)
+			--> Stash is convenient in that credentials are synchronized with rest of infrastructure
+			--> But visibility on GitHub is important
+		- Core API next steps: start 1.2 alpha branch, rename artefacts, deploy to Nexus
+			
+
+------ previous items -------- 9 July 2013
+
 Meeting agenda:
 	Planning phone meetings. 
 		Proposal today and July 2 on v1.1 immediate release, 
