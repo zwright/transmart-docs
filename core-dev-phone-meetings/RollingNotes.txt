@@ -1,5 +1,49 @@
 Rolling version of combined agenda and notes; core developers phone calls
 
+Meeting agenda - 23 July 2013 - VCF loading deep dive
+
+VCF loading experiences
+- Question from Alvaro : loading individual level variant data from VCF files
+--> e.g. use case: give me all samples/patients that have a specific variation
+--> Creating sample/patient sets is problematic anyway in current tranSMART UI
+--> Using it directly in R is possible
+--> Alexander: Oracle GPL 1.0 SNP loading - data loads but connection with patients is problematic
+
+ * Variant annotations & summary data
+
+GWAS branch from Pfizer uses the following data model
+https://github.com/transmart/transmartApp/tree/GWAS/databaseScripts
+
+ * Variant annotations & summary data loading
+ 
+The VCF.groovy script is used to update variant (meta)data / annotations for the GWAS branch
+Groovy scripts at https://github.com/transmart/tranSMART-ETL/blob/master/src/com/recomdata/pipeline/vcf/VCF.groovy
+--> Purpose is to parse VCF files and inject the variant annotations directly into the DEAPP/BIOMART tables
+--> Tables used are DE_RC_SNP_INFO, DE_SNP_INFO, DE_SNP_INFO, BIOMART.BIO_SNP
+--> But these tables seem unused in the tranSMART GPL 1.0 codebase (to verify)
+--> But they are in the GWAS branch (to be checked)
+
+ * Individual level data
+
+Schema information from https://github.com/transmart/transmartApp-DB/blob/master/VCF_db_scripts/Oracle/variant_ddl.sql
+--> Tables a.o. DE_VARIANT_DATASET, DE_VARIANT_SUBJECT_DETAIL, DE_VARIANT_SUBJECT_IDX
+--> Seems to be geared towards individual level data connected to patients
+--> ETL shouldn't be too difficult to write/fix
+--> J&J branch has some functionality but it seems to be limited to exporting data
+--> Can we use R interface to leverage this data?
+--> Example link to individual level VCF files: ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/phase1/analysis_results/consensus_call_sets/snps
+
+ * Individual level data loader script
+ 
+Involves 2 steps
+--> 1. Perl script to split VCF file into the various tables DE_VARIANT_DATASET, DE_VARIANT_SUBJECT_DETAIL etc.
+--> 2. Uses sqlldr to directly upload into Oracle (makes sense because of very large data volumes)
+--> Not in GitHub yet !! :-(
+ 
+To check out: Load individual level data into IGV server ?
+
+
+------ previous meeting -------- 9 July 2013	
 
 Meeting agenda:
 	Current branches to integrate in 1.2:
@@ -38,7 +82,7 @@ Meeting agenda:
 		- Core API next steps: start 1.2 alpha branch, rename artefacts, deploy to Nexus
 			
 
------- previous items -------- 9 July 2013
+------ previous items -------- 2 July 2013
 
 Meeting agenda:
 	Planning phone meetings. 
