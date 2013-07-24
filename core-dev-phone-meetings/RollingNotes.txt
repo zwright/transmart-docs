@@ -28,7 +28,7 @@ Groovy scripts at https://github.com/transmart/tranSMART-ETL/blob/master/src/com
 Schema information from https://github.com/transmart/transmartApp-DB/blob/master/VCF_db_scripts/Oracle/variant_ddl.sql
 --> Tables a.o. DE_VARIANT_DATASET, DE_VARIANT_SUBJECT_DETAIL, DE_VARIANT_SUBJECT_IDX
 --> Seems to be geared towards individual level data connected to patients
---> ETL shouldn't be too difficult to write/fix
+--> ETL quite straightforward
 --> J&J branch has some functionality but it seems to be limited to exporting data
 --> Can we use R interface to leverage this data?
 --> Example link to individual level VCF files: ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/phase1/analysis_results/consensus_call_sets/snps
@@ -38,9 +38,18 @@ Schema information from https://github.com/transmart/transmartApp-DB/blob/master
 Involves 2 steps
 --> 1. Perl script to split VCF file into the various tables DE_VARIANT_DATASET, DE_VARIANT_SUBJECT_DETAIL etc.
 --> 2. Uses sqlldr to directly upload into Oracle (makes sense because of very large data volumes)
---> Not in GitHub yet !! :-(
- 
-To check out: Load individual level data into IGV server ?
+--> Not in GitHub yet - will be soon
+
+Explanation by Jinlei - integration with IGV:
+The current transmart code base supports a simple VCF use case with IGV integration. The basic workflow looks like this:
+User starts with cohort selection and create a cohort (one or two subsets)
+User selects the IGV in advanced analysis
+User uses the generic filters in the IGV to select variants(SNPs, genes, pathways)
+User click on the IGV button to get the variant view in IGV with VCF data for the selected cohorts
+The [vcf data retrieving service](https://github.com/transmart/transmartApp/blob/master/grails-app/services/com/recomdata/transmart/data/export/VcfDataService.groovy)
+is implemented in the transmart core which retrieves VCF data for a selected cohort and genetic filters. It leverages the domain classes that are mapped to
+the new [vcf schema](https://github.com/transmart/transmartApp-DB/blob/master/VCF_db_scripts/Oracle/variant_ddl.sql). 
+The IGV integration is implemented  in the Rmodules plugin. The IGV service class takes care of the IGV session and parameter file generation.
 
 
 ------ previous meeting -------- 9 July 2013	
