@@ -1,5 +1,37 @@
 Rolling version of combined agenda and notes; core developers phone calls
 
+Meeting agenda - 30 July 2013 - 
+
+This Tuesday's Core Developer's meeting will be primarily about organizing the sprints
+for the final development of Version 1.1 for release in September. 
+Specifically, my proposed agenda is:
+
+  What needs to be done for the release,
+  How to conduct weekly sprints,
+  What goals are in the first sprint,
+  Who is involved in first sprint (taking into account vacations, etc.),
+  Schedule for scrum meetings.
+
+For the next six weeks (at least) these phone meetings will largely be dedicated
+to the planning and execution of these development sprints.
+Onlookers are welcome, of course!
+
+Notes:
+	Starting Items:
+		Review install process (Zach, Vasu, @ U-MICH)
+		JIRA items TBD and assigned
+		is anything in ETL/Data loading high priority?
+	Tentative plan
+		Planning meeting on Tuesday
+		Standup/scrum meeting on Thursday
+		Where to put notes on activity 
+		
+	Testing should start with a clean install - also need a public demo version
+	Contact original reporting person to see if bug is still a problem (Terry)
+	Ask reporting person to demo bug in weekly call and explain problem. 
+
+------ previous meeting -------- 23 July 2013
+
 Meeting agenda - 23 July 2013 - VCF loading deep dive
 
 VCF loading experiences
@@ -41,16 +73,20 @@ Involves 2 steps
 --> Not in GitHub yet - will be soon
 
 Explanation by Jinlei - integration with IGV:
-The current transmart code base supports a simple VCF use case with IGV integration. The basic workflow looks like this:
-User starts with cohort selection and create a cohort (one or two subsets)
-User selects the IGV in advanced analysis
-User uses the generic filters in the IGV to select variants(SNPs, genes, pathways)
-User click on the IGV button to get the variant view in IGV with VCF data for the selected cohorts
-The [vcf data retrieving service](https://github.com/transmart/transmartApp/blob/master/grails-app/services/com/recomdata/transmart/data/export/VcfDataService.groovy)
-is implemented in the transmart core which retrieves VCF data for a selected cohort and genetic filters. It leverages the domain classes that are mapped to
-the new [vcf schema](https://github.com/transmart/transmartApp-DB/blob/master/VCF_db_scripts/Oracle/variant_ddl.sql). 
-The IGV integration is implemented  in the Rmodules plugin. The IGV service class takes care of the IGV session and parameter file generation.
+The current transmart code base supports a simple VCF use case with IGV integration. 
+The basic workflow looks like this:
+ User starts with cohort selection and create a cohort (one or two subsets)
+ User selects the IGV in advanced analysis
+ User uses the generic filters in the IGV to select variants(SNPs, genes, pathways)
+ User click on the IGV button to get the variant view in IGV with VCF data for the selected cohorts
 
+The [vcf data retrieving service]
+(https://github.com/transmart/transmartApp/blob/master/grails-app/services/com/recomdata/transmart/data/export/VcfDataService.groovy)
+is implemented in the transmart core which retrieves VCF data for a selected cohort 
+and genetic filters. It leverages the domain classes that are mapped to the new [vcf schema]
+(https://github.com/transmart/transmartApp-DB/blob/master/VCF_db_scripts/Oracle/variant_ddl.sql). 
+The IGV integration is implemented in the Rmodules plugin. 
+The IGV service class takes care of the IGV session and parameter file generation.
 
 ------ previous meeting -------- 9 July 2013	
 
