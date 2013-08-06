@@ -1,6 +1,23 @@
 Rolling version of combined agenda and notes; core developers phone calls
 
-Meeting agenda - 30 July 2013 - 
+Meeting agenda - 06 August 2013 -----
+
+Agenda:
+	Review status/plan for documentation
+	Planning for next developer's sprint
+	Matters arising
+
+Known items
+	Problem with Sample Explorer (potential configuration error)
+	BoxPlot (Box Plot with ANOVA) problem
+	tranSMART Foundation Bamboo server not ready
+	Install problems - Peter Rice (also remove Sample Explorer)
+	doc2help
+	http://www.componentone.com/superproducts/doctohelp/
+	http://open.recomdata.com/wiki/download/attachments/43548705/OpenSource_tranSMART_User_Guide.pdf
+	More from Jinlei. 
+
+----- Previous Meeting agenda - 30 July 2013 ------
 
 This Tuesday's Core Developer's meeting will be primarily about organizing the sprints
 for the final development of Version 1.1 for release in September. 
