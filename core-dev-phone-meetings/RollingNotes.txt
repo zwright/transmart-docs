@@ -282,8 +282,48 @@ Items for agenda
 	Branches on GitHub:transmartApp (below)
 	Current status (below)
 	
-Branches:
-master
+Items for agenda
+  Progress reports
+  Release Plan document:
+	http://transmartproject.org/wiki/display/TSMTGPL/Release+Plan+for+tranSMART+V+1.1
+
+Progress items:
+Workshop preparations. Well under way! Hope everyone is registered that wants to be! 
+Faceted search. Continues...
+Analysis portion. copy number veration data; implementing survival analysis and group test
+  Fixed marker selection... works continues
+API (esp. High Dimensional data). Might want to add a sample dimension. Under discussion...
+  http://thehyve.github.io/transmart-core-api/ - API docs starter
+Status of branches (merge).
+Other...
+
+Release plan 
+	GWAS functionality (waiting to hear: go or no go)
+	add test master (code freeze) against Oracle
+	github workflow; tagging and providing a "code freeze" source archive (might be better then a fork)
+
+Previous notes, May 21
+==========
+Progress items: (got to clean this up!)
+Faceted search waiting for addition data from Jenson
+API - Need more input from community
+Sample data is ready (was a slight error; fixed)
+Analysis portion (theHyve) being worked on: new functionality for dealing with variation data
+Search: there are problems? (Postgres version)
+	Venkata working on this
+Merge (locally) and bug fixes: JNJ_GPL1.0_HOTFIX_MERGE
+	Schema changes need for both ETL and Search for micro array data
+Analysis functionality (Shicai)
+	Micro array requires SQL scripts to be run; after ETL has run
+	Kees has the "magic"!
+		
+Items from phone call with tranSMART foundation
+	release planning (deadlines: Alpha, May 15; Beta, June 15; Release, Sept 15)
+	testing and documentation (unit tests! integration tests!)
+	
+Branches of transmartApp:
+master - the main, active, working branch
+
 GWAS - dev branch; not yet for release
 	Client implementation (Recom); 
 	meta data for study (e.g. show definitions)
