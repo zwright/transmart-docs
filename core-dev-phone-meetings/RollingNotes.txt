@@ -1,6 +1,49 @@
 Rolling version of combined agenda and notes; core developers phone calls
 
-Meeting agenda - 06 August 2013 -----
+Meeting agenda - 13 August 2013 -----
+
+Agenda: 
+  Review of status on Advanced workflows,
+    HeatMap, ANOVA (Box Plot), Hierarchical Clustering, Marker Selection
+    The above are working. 
+    Others
+  Review of status Admin functions,
+    Users, Groups, Access control, Studies,
+    Others
+  Status Testing platform
+  Other status and/or problems
+  	Need to merge thehyve - master on transmart/transmart-core-db
+  	Help - 
+  	  generated from a word document and then pushed to code 
+  	  notes in e-mail on doc and method. 
+  	  need to get document into github and 
+  	    make build an optional part of the install ??
+  Planning for the coming week
+
+Notes:
+	Admin panel problems: 
+	  the code does not seem to be connected to anything in the current version
+	  !! Need to check the code in the Oracle version
+	Advance Workflow:
+	  duplicate workflows - ??
+	  need to document these duplications - 
+	  Components: R code, jason, and DB table
+	  User/Groups working
+	  Access control? Study? - goal of these pages??
+	  Roles from the interface are not used; hard coded in the code?
+	  	remove the page/panel??! (View-Roles Panel?)
+	  RequestMap (url mapping): spring source security not integrated.
+		remove the page/panel??!
+	  Need to return to the requirements: 
+	  	on per Study base, owner, R/W, R only, admin ???
+	  	this needs to be reviewed by users! ???
+	  	GUI SUCKS! (Security GUI needs to be user-oriented and clear!)
+	  Minimal Study Access - can we do this in time for v1.1?
+	    User can/cannot see private-studies.
+	    Need to be documented.
+	  Good access control into v1.2 or beyond. 
+	  
+------ Previous Meeting agenda - 06 August 2013 -----
 
 Agenda:
 	Review status/plan for documentation
