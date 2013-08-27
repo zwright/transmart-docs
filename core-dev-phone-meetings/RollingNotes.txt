@@ -1,5 +1,38 @@
 Rolling version of combined agenda and notes; core developers phone calls
 
+Meeting agenda - 27 August 2013 -----
+
+Proposed agenda (this should look familiar:
+  Review of status on Advanced workflows
+  Review of status Admin functions
+  Review of status of Documentation - Branding needs
+  Status Testing platform
+  Other status and/or problems
+  Planning for the coming week
+  	
+
+Some new items
+  Revamping Jira (after the final 1.1 release)
+  Adding Items for 1.2 into Jira (should we start now)
+    For example, requirements from Sanofi (from Sherry.Cao@genzyme.com)
+  
+  
+Anything else?
+
+Notes:
+  Admin functions - pending report from Florian
+  Advanced Workflows - in Peter R's hands 
+  Testing platforms - at IC later this week; also transmart-webdev 
+  Review of status of Documentation
+  	User docs up on main web site next week
+  	Admin help pages?
+  	Info-button help (generated Doc2Help from *.Doc sources)
+  		Do we have all the sources (admin/user trees?)
+  Rearrange JIRA before adding new (e.g. 1.2 features/requirements)
+  
+  	
+---- previous notes ----
+
 Meeting agenda - 13 August 2013 -----
 
 Agenda: 
