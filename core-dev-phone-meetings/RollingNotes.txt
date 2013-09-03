@@ -1,5 +1,37 @@
 Rolling version of combined agenda and notes; core developers phone calls
 
+Meeting agenda - 03 September 2013 -----
+
+	Testing -
+		Imperial College - with external people
+	Demo needed for the 17th for the all-hands call
+	Review/discussion of release process
+	Note: last minute changes supporting the admin page
+	
+	Starting to talk about 1.2 (via Kees)
+	- merge of JnJ hotfix branch
+	- GWAS data support
+	- more to come!
+	
+	Postgres 9.3
+		materialized views??
+		what alternatives if materialized views don't work
+
+	Advanced workflows (via Venkata)
+		RRoutines buggy - esp Heatmap and BioMarker selection
+		Some fixes in place (working with Peter Rice)
+		
+	Peter making updates to testing document (a word doc!)
+		planning for testing at Pfizer around "end of the week"
+		testing next week
+		automating scripts - selenium (Kees) !!
+		https://github.com/thehyve/seleniumTests/tree/master/transmart
+		prototyped - Chrome, Firefox... more?
+		get automated tests into Bamboo
+	
+
+---- previous notes ----
+
 Meeting agenda - 27 August 2013 -----
 
 Proposed agenda (this should look familiar:
@@ -31,8 +63,6 @@ Notes:
   Rearrange JIRA before adding new (e.g. 1.2 features/requirements)
   
   	
----- previous notes ----
-
 Meeting agenda - 13 August 2013 -----
 
 Agenda: 
