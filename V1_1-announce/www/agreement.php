@@ -41,11 +41,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">tranSMART Version 1.1</a>
+          <a class="brand" href="index">tranSMART Version 1.1</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="index.html">Introduction</a></li>            
-              <li class="active"><a href="#download">Get tranSMART</a></li>              
+              <li><a href="index">Introduction</a></li>            
+              <li class="active"><a href="agreement">Get tranSMART</a></li>              
               <li><a href="http://www.transmartfoundation.org/site/how-get-involved">Community</a></li>
               <li><a href="https://wiki.transmartfoundation.org/display/TSMTGPL/Documentation">Documentation</a></li>              
               <li><a href="https://jira.transmartfoundation.org">Report a bug</a></li>                          
@@ -342,7 +342,7 @@ END OF TERMS AND CONDITIONS
     <script>
     
     	var url = {
-    		done: "done.html",
+    		done: "thanks",
     		image: "http://go.transmart.etriks.org/download",
     		install: "https://wiki.transmartfoundation.org/display/TSMTGPL/Installing+tranSMART"
     	}
