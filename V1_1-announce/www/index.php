@@ -40,11 +40,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">tranSMART Version 1.1</a>
+          <a class="brand" href="index">tranSMART Version 1.1</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#introduction">Introduction</a></li>              
-              <li><a href="download.html">Get tranSMART</a></li>              
+              <li class="active"><a href="index">Introduction</a></li>              
+              <li><a href="agreement">Get tranSMART</a></li>              
               <li><a href="http://www.transmartfoundation.org/site/how-get-involved">Community</a></li>
               <li><a href="https://wiki.transmartfoundation.org/display/TSMTGPL/Documentation">Documentation</a></li>              
               <li><a href="https://jira.transmartfoundation.org">Report a bug</a></li>                          
@@ -74,7 +74,7 @@
         <div class="span6">
           <h2>Download tranSMART</h2>
           <p>If you are a systems administrator or developer, you can set up tranSMART for evaluation by your organisation or project on your own Web server.</p>
-          <p><a class="btn" href="download.html">Get tranSMART &raquo;</a></p>
+          <p><a class="btn" href="agreement">Get tranSMART &raquo;</a></p>
        </div>
       </div>
 
