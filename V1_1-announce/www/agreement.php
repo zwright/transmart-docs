@@ -67,7 +67,7 @@
 		  <p>If you are a systems administrator or developer, you can set up tranSMART for evaluation by your organisation or project on your own server using one of the options on the right hand side. To use tranSMART you must (a) agree to the license agreement below, and (b) fill out an information form (you will be redirected once your download has started). tranSMART is licensed under the <a href="https://www.gnu.org/licenses/gpl.txt">GNU General Public License Version 3</a>.</p>
 		  <p><b>The information provided will only be used by us to understand who is evaluating and using the tranSMART system and will never be shared with third-parties.</b></p>
 
-<textarea class="field span6" wrap="1" rows="5" name="license agreement">
+<textarea class="field span6" wrap="1" rows="5" name="license agreement" style="height:300px;overflow-x:hidden;">
 GNU GENERAL PUBLIC LICENSE
 Version 3, 29 June 2007
 
