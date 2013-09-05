@@ -69,7 +69,7 @@
         <div class="span6">
           <h2>Demo tranSMART</h2>
           <p>If you are an end-user (i.e. a clinician, scientist, research staff etc.) evaluating tranSMART, we have a free and public demonstration of tranSMART generously hosted by BT for Life Sciences R&D Connect.</p>
-          <p><a class="btn" href="http://demo.transmart.etriks.org:7070" target=_new>Launch tranSMART &raquo;</a></p>
+          <p><a class="btn" href="http://demo.transmart.etriks.org" target="_blank">Launch tranSMART &raquo;</a></p>
         </div>
         <div class="span6">
           <h2>Download tranSMART</h2>
